@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <title>Chrome Extension</title>
 </head>
+
 <body>
-    <p class="hello">Hello world</p>
+    <div class="content">
+        <label for="pageTitle" class="column">タイトル</label>
+        <div class="grid">
+            <div class="text">
+                <input type="text" id="pageTitle" class="column">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <label for="pageURL" class="column">URL</label>
+        <div class="grid">
+            <div class="text">
+                <input type="url" id="pageURL" class="column">
+            </div>
+        </div>
+    </div>
+
     <script src="popup.js" defer></script>
 </body>
+
 </html>

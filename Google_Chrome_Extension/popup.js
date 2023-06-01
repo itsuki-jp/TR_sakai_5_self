@@ -1,3 +1,2 @@
-setTimeout(() => {
-    alert("Hello, world! (from js)");
-}, 700);
+const title = document.getElementById("pageTitle");
+const url = document.getElementById("pageURL");
