@@ -11,5 +11,21 @@
         "default_title": "Change Tag Color",
         "default_icon": "icon_48x48.png",
         "default_popup": "popup.html"
-    }
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ]
 }

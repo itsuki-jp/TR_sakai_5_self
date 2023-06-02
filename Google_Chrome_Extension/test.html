@@ -1,0 +1,1619 @@
+<!-- https://www.nnn.ed.nico/contents/guides/1454/content -->
+<html lang="" foxified="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>プログラミングを体験してみよう</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&amp;family=BIZ+UDPGothic:wght@400;700&amp;display=swap"
+        rel="stylesheet">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script async="" src="https://www.clarity.ms/s/0.7.8/clarity.js"></script>
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/js?id=G-CYV7Y8H5RK&amp;l=dataLayer&amp;cx=c"></script>
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/destination?id=G-CYV7Y8H5RK&amp;l=dataLayer&amp;cx=c"></script>
+    <script async="" src="https://www.clarity.ms/tag/c6hsgmh2kh?ref=gtm2"></script>
+    <script async="" src="//static.ads-twitter.com/uwt.js"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-5NW2C5Z"></script>
+    <script type="text/x-mathjax-config;executed=true" defer=""> MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$', '$'] ],
+        displayMath: [ ['$$','$$'], ["\\(","\\)"] ]
+      },
+      "HTML-CSS": {
+        availableFonts: ["TeX"],
+        undefinedFamily: "'Raleway', Helvetica, Arial, sans-serif"
+      }
+    });
+    MathJax.Hub.Register.StartupHook("End Jax",function () {
+      var jax = "HTML-CSS";
+      return MathJax.Hub.setRenderer(jax);
+    });
+  </script>
+    <script defer=""
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="stylesheet" href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/styles/style.css">
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/essential-assets/normalize.css">
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/essential-assets/style.css">
+    <link rel="stylesheet" href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/nnn-fonts/font.css">
+    <script type="text/javascript"
+        src="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/make-popup/makePopup.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/make-popup/style.css">
+    <script type="text/javascript"
+        src="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/copy-button/copyCodeButton.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/copy-button/inlineTooltip.css">
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/copy-button/style.css">
+    <script type="text/javascript"
+        src="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/copy-button/tooltips.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/code-block-utils/codeBlockDecorator.css">
+    <script type="text/javascript"
+        src="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/code-block-utils/codeBlockDecorator.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/code-block-utils/consoleBlockDecorator.css">
+    <script type="text/javascript"
+        src="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/code-block-utils/consoleBlockDecorator.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/code-block-utils/highlight/default.css">
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/code-block-utils/highlight/prism-diff-highlight.css">
+    <script type="text/javascript"
+        src="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/code-block-utils/highlight/prism-diff-highlight.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/code-block-utils/style.css">
+    <script type="text/javascript"
+        src="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/gifffer-book-renderer/gifffer.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/gifffer-book-renderer/loader.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/gifffer-book-renderer/style.css">
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/notice/information.css">
+    <link rel="stylesheet" href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/notice/notice.css">
+    <link rel="stylesheet" href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/notice/warning.css">
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/practice-answer/style.css">
+    <script type="text/javascript"
+        src="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/practice-answer/toggler.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/tab-ui/btnstyle.css">
+    <script type="text/javascript"
+        src="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/tab-ui/tabSelector.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/tab-ui/tabstyle.css">
+    <link rel="stylesheet" href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/tips/style.css">
+    <link rel="stylesheet" href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/mermaid/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            "startOnLoad": true
+        });
+
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/code-and-preview/iframeResizer.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/code-and-preview/style.css">
+    <script type="text/x-mathjax-config;executed=true" defer=""> MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"]],"displayMath":[["$$","$$"],["\\(","\\)"]]},"HTML-CSS":{"availableFonts":["TeX"],"undefinedFamily":"'Raleway', Helvetica, Arial, sans-serif"}});
+          MathJax.Hub.Register.StartupHook("End Jax",function () {
+            var jax = "HTML-CSS";
+            return MathJax.Hub.setRenderer(jax);
+          });
+        </script>
+    <script defer=""
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="stylesheet"
+        href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/google-fonts/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&amp;family=BIZ+UDPGothic:wght@400;700&amp;display=swap"
+        rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/add-template-block/templateBlock.js"></script>
+    <link rel="stylesheet" href="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/news/style.css">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5NW2C5Z" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5NW2C5Z');</script>
+    <!-- End Google Tag Manager -->
+    <style type="text/css">
+        .MathJax_Hover_Frame {
+            border-radius: .25em;
+            -webkit-border-radius: .25em;
+            -moz-border-radius: .25em;
+            -khtml-border-radius: .25em;
+            box-shadow: 0px 0px 15px #83A;
+            -webkit-box-shadow: 0px 0px 15px #83A;
+            -moz-box-shadow: 0px 0px 15px #83A;
+            -khtml-box-shadow: 0px 0px 15px #83A;
+            border: 1px solid #A6D ! important;
+            display: inline-block;
+            position: absolute
+        }
+
+        .MathJax_Menu_Button .MathJax_Hover_Arrow {
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #AAA;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -khtml-border-radius: 4px;
+            font-family: 'Courier New', Courier;
+            font-size: 9px;
+            color: #F0F0F0
+        }
+
+        .MathJax_Menu_Button .MathJax_Hover_Arrow span {
+            display: block;
+            background-color: #AAA;
+            border: 1px solid;
+            border-radius: 3px;
+            line-height: 0;
+            padding: 4px
+        }
+
+        .MathJax_Hover_Arrow:hover {
+            color: white !important;
+            border: 2px solid #CCC !important
+        }
+
+        .MathJax_Hover_Arrow:hover span {
+            background-color: #CCC !important
+        }
+    </style>
+    <style type="text/css">
+        #MathJax_About {
+            position: fixed;
+            left: 50%;
+            width: auto;
+            text-align: center;
+            border: 3px outset;
+            padding: 1em 2em;
+            background-color: #DDDDDD;
+            color: black;
+            cursor: default;
+            font-family: message-box;
+            font-size: 120%;
+            font-style: normal;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            z-index: 201;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -khtml-border-radius: 15px;
+            box-shadow: 0px 10px 20px #808080;
+            -webkit-box-shadow: 0px 10px 20px #808080;
+            -moz-box-shadow: 0px 10px 20px #808080;
+            -khtml-box-shadow: 0px 10px 20px #808080;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+        }
+
+        #MathJax_About.MathJax_MousePost {
+            outline: none
+        }
+
+        .MathJax_Menu {
+            position: absolute;
+            background-color: white;
+            color: black;
+            width: auto;
+            padding: 2px;
+            border: 1px solid #CCCCCC;
+            margin: 0;
+            cursor: default;
+            font: menu;
+            text-align: left;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            z-index: 201;
+            box-shadow: 0px 10px 20px #808080;
+            -webkit-box-shadow: 0px 10px 20px #808080;
+            -moz-box-shadow: 0px 10px 20px #808080;
+            -khtml-box-shadow: 0px 10px 20px #808080;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+        }
+
+        .MathJax_MenuItem {
+            padding: 2px 2em;
+            background: transparent
+        }
+
+        .MathJax_MenuArrow {
+            position: absolute;
+            right: .5em;
+            padding-top: .25em;
+            color: #666666;
+            font-size: .75em
+        }
+
+        .MathJax_MenuActive .MathJax_MenuArrow {
+            color: white
+        }
+
+        .MathJax_MenuArrow.RTL {
+            left: .5em;
+            right: auto
+        }
+
+        .MathJax_MenuCheck {
+            position: absolute;
+            left: .7em
+        }
+
+        .MathJax_MenuCheck.RTL {
+            right: .7em;
+            left: auto
+        }
+
+        .MathJax_MenuRadioCheck {
+            position: absolute;
+            left: 1em
+        }
+
+        .MathJax_MenuRadioCheck.RTL {
+            right: 1em;
+            left: auto
+        }
+
+        .MathJax_MenuLabel {
+            padding: 2px 2em 4px 1.33em;
+            font-style: italic
+        }
+
+        .MathJax_MenuRule {
+            border-top: 1px solid #CCCCCC;
+            margin: 4px 1px 0px
+        }
+
+        .MathJax_MenuDisabled {
+            color: GrayText
+        }
+
+        .MathJax_MenuActive {
+            background-color: Highlight;
+            color: HighlightText
+        }
+
+        .MathJax_MenuDisabled:focus,
+        .MathJax_MenuLabel:focus {
+            background-color: #E8E8E8
+        }
+
+        .MathJax_ContextMenu:focus {
+            outline: none
+        }
+
+        .MathJax_ContextMenu .MathJax_MenuItem:focus {
+            outline: none
+        }
+
+        #MathJax_AboutClose {
+            top: .2em;
+            right: .2em
+        }
+
+        .MathJax_Menu .MathJax_MenuClose {
+            top: -10px;
+            left: -10px
+        }
+
+        .MathJax_MenuClose {
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #AAA;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -khtml-border-radius: 18px;
+            font-family: 'Courier New', Courier;
+            font-size: 24px;
+            color: #F0F0F0
+        }
+
+        .MathJax_MenuClose span {
+            display: block;
+            background-color: #AAA;
+            border: 1.5px solid;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -khtml-border-radius: 18px;
+            line-height: 0;
+            padding: 8px 0 6px
+        }
+
+        .MathJax_MenuClose:hover {
+            color: white !important;
+            border: 2px solid #CCC !important
+        }
+
+        .MathJax_MenuClose:hover span {
+            background-color: #CCC !important
+        }
+
+        .MathJax_MenuClose:hover:focus {
+            outline: none
+        }
+    </style>
+    <style type="text/css">
+        .MathJax_Preview .MJXf-math {
+            color: inherit !important
+        }
+    </style>
+    <style type="text/css">
+        .MJX_Assistive_MathML {
+            position: absolute !important;
+            top: 0;
+            left: 0;
+            clip: rect(1px, 1px, 1px, 1px);
+            padding: 1px 0 0 0 !important;
+            border: 0 !important;
+            height: 1px !important;
+            width: 1px !important;
+            overflow: hidden !important;
+            display: block !important;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+
+        .MJX_Assistive_MathML.MJX_Assistive_MathML_Block {
+            width: 100% !important
+        }
+    </style>
+    <style type="text/css">
+        #MathJax_Zoom {
+            position: absolute;
+            background-color: #F0F0F0;
+            overflow: auto;
+            display: block;
+            z-index: 301;
+            padding: .5em;
+            border: 1px solid black;
+            margin: 0;
+            font-weight: normal;
+            font-style: normal;
+            text-align: left;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            box-shadow: 5px 5px 15px #AAAAAA;
+            -webkit-box-shadow: 5px 5px 15px #AAAAAA;
+            -moz-box-shadow: 5px 5px 15px #AAAAAA;
+            -khtml-box-shadow: 5px 5px 15px #AAAAAA;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+        }
+
+        #MathJax_ZoomOverlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 300;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            opacity: 0;
+            filter: alpha(opacity=0)
+        }
+
+        #MathJax_ZoomFrame {
+            position: relative;
+            display: inline-block;
+            height: 0;
+            width: 0
+        }
+
+        #MathJax_ZoomEventTrap {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 302;
+            display: inline-block;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            opacity: 0;
+            filter: alpha(opacity=0)
+        }
+    </style>
+    <style type="text/css">
+        .MathJax_Preview {
+            color: #888
+        }
+
+        #MathJax_Message {
+            position: fixed;
+            left: 1em;
+            bottom: 1.5em;
+            background-color: #E6E6E6;
+            border: 1px solid #959595;
+            margin: 0px;
+            padding: 2px 8px;
+            z-index: 102;
+            color: black;
+            font-size: 80%;
+            width: auto;
+            white-space: nowrap
+        }
+
+        #MathJax_MSIE_Frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0px;
+            z-index: 101;
+            border: 0px;
+            margin: 0px;
+            padding: 0px
+        }
+
+        .MathJax_Error {
+            color: #CC0000;
+            font-style: italic
+        }
+    </style>
+    <style type="text/css">
+        .MJXp-script {
+            font-size: .8em
+        }
+
+        .MJXp-right {
+            -webkit-transform-origin: right;
+            -moz-transform-origin: right;
+            -ms-transform-origin: right;
+            -o-transform-origin: right;
+            transform-origin: right
+        }
+
+        .MJXp-bold {
+            font-weight: bold
+        }
+
+        .MJXp-italic {
+            font-style: italic
+        }
+
+        .MJXp-scr {
+            font-family: MathJax_Script, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-frak {
+            font-family: MathJax_Fraktur, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-sf {
+            font-family: MathJax_SansSerif, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-cal {
+            font-family: MathJax_Caligraphic, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-mono {
+            font-family: MathJax_Typewriter, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-largeop {
+            font-size: 150%
+        }
+
+        .MJXp-largeop.MJXp-int {
+            vertical-align: -.2em
+        }
+
+        .MJXp-math {
+            display: inline-block;
+            line-height: 1.2;
+            text-indent: 0;
+            font-family: 'Times New Roman', Times, STIXGeneral, serif;
+            white-space: nowrap;
+            border-collapse: collapse
+        }
+
+        .MJXp-display {
+            display: block;
+            text-align: center;
+            margin: 1em 0
+        }
+
+        .MJXp-math span {
+            display: inline-block
+        }
+
+        .MJXp-box {
+            display: block !important;
+            text-align: center
+        }
+
+        .MJXp-box:after {
+            content: " "
+        }
+
+        .MJXp-rule {
+            display: block !important;
+            margin-top: .1em
+        }
+
+        .MJXp-char {
+            display: block !important
+        }
+
+        .MJXp-mo {
+            margin: 0 .15em
+        }
+
+        .MJXp-mfrac {
+            margin: 0 .125em;
+            vertical-align: .25em
+        }
+
+        .MJXp-denom {
+            display: inline-table !important;
+            width: 100%
+        }
+
+        .MJXp-denom>* {
+            display: table-row !important
+        }
+
+        .MJXp-surd {
+            vertical-align: top
+        }
+
+        .MJXp-surd>* {
+            display: block !important
+        }
+
+        .MJXp-script-box>* {
+            display: table !important;
+            height: 50%
+        }
+
+        .MJXp-script-box>*>* {
+            display: table-cell !important;
+            vertical-align: top
+        }
+
+        .MJXp-script-box>*:last-child>* {
+            vertical-align: bottom
+        }
+
+        .MJXp-script-box>*>*>* {
+            display: block !important
+        }
+
+        .MJXp-mphantom {
+            visibility: hidden
+        }
+
+        .MJXp-munderover {
+            display: inline-table !important
+        }
+
+        .MJXp-over {
+            display: inline-block !important;
+            text-align: center
+        }
+
+        .MJXp-over>* {
+            display: block !important
+        }
+
+        .MJXp-munderover>* {
+            display: table-row !important
+        }
+
+        .MJXp-mtable {
+            vertical-align: .25em;
+            margin: 0 .125em
+        }
+
+        .MJXp-mtable>* {
+            display: inline-table !important;
+            vertical-align: middle
+        }
+
+        .MJXp-mtr {
+            display: table-row !important
+        }
+
+        .MJXp-mtd {
+            display: table-cell !important;
+            text-align: center;
+            padding: .5em 0 0 .5em
+        }
+
+        .MJXp-mtr>.MJXp-mtd:first-child {
+            padding-left: 0
+        }
+
+        .MJXp-mtr:first-child>.MJXp-mtd {
+            padding-top: 0
+        }
+
+        .MJXp-mlabeledtr {
+            display: table-row !important
+        }
+
+        .MJXp-mlabeledtr>.MJXp-mtd:first-child {
+            padding-left: 0
+        }
+
+        .MJXp-mlabeledtr:first-child>.MJXp-mtd {
+            padding-top: 0
+        }
+
+        .MJXp-merror {
+            background-color: #FFFF88;
+            color: #CC0000;
+            border: 1px solid #CC0000;
+            padding: 1px 3px;
+            font-style: normal;
+            font-size: 90%
+        }
+
+        .MJXp-scale0 {
+            -webkit-transform: scaleX(.0);
+            -moz-transform: scaleX(.0);
+            -ms-transform: scaleX(.0);
+            -o-transform: scaleX(.0);
+            transform: scaleX(.0)
+        }
+
+        .MJXp-scale1 {
+            -webkit-transform: scaleX(.1);
+            -moz-transform: scaleX(.1);
+            -ms-transform: scaleX(.1);
+            -o-transform: scaleX(.1);
+            transform: scaleX(.1)
+        }
+
+        .MJXp-scale2 {
+            -webkit-transform: scaleX(.2);
+            -moz-transform: scaleX(.2);
+            -ms-transform: scaleX(.2);
+            -o-transform: scaleX(.2);
+            transform: scaleX(.2)
+        }
+
+        .MJXp-scale3 {
+            -webkit-transform: scaleX(.3);
+            -moz-transform: scaleX(.3);
+            -ms-transform: scaleX(.3);
+            -o-transform: scaleX(.3);
+            transform: scaleX(.3)
+        }
+
+        .MJXp-scale4 {
+            -webkit-transform: scaleX(.4);
+            -moz-transform: scaleX(.4);
+            -ms-transform: scaleX(.4);
+            -o-transform: scaleX(.4);
+            transform: scaleX(.4)
+        }
+
+        .MJXp-scale5 {
+            -webkit-transform: scaleX(.5);
+            -moz-transform: scaleX(.5);
+            -ms-transform: scaleX(.5);
+            -o-transform: scaleX(.5);
+            transform: scaleX(.5)
+        }
+
+        .MJXp-scale6 {
+            -webkit-transform: scaleX(.6);
+            -moz-transform: scaleX(.6);
+            -ms-transform: scaleX(.6);
+            -o-transform: scaleX(.6);
+            transform: scaleX(.6)
+        }
+
+        .MJXp-scale7 {
+            -webkit-transform: scaleX(.7);
+            -moz-transform: scaleX(.7);
+            -ms-transform: scaleX(.7);
+            -o-transform: scaleX(.7);
+            transform: scaleX(.7)
+        }
+
+        .MJXp-scale8 {
+            -webkit-transform: scaleX(.8);
+            -moz-transform: scaleX(.8);
+            -ms-transform: scaleX(.8);
+            -o-transform: scaleX(.8);
+            transform: scaleX(.8)
+        }
+
+        .MJXp-scale9 {
+            -webkit-transform: scaleX(.9);
+            -moz-transform: scaleX(.9);
+            -ms-transform: scaleX(.9);
+            -o-transform: scaleX(.9);
+            transform: scaleX(.9)
+        }
+
+        .MathJax_PHTML .noError {
+            vertical-align: ;
+            font-size: 90%;
+            text-align: left;
+            color: black;
+            padding: 1px 3px;
+            border: 1px solid
+        }
+    </style>
+    <meta http-equiv="origin-trial"
+        content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <meta http-equiv="origin-trial"
+        content="A+xK4jmZTgh1KBVry/UZKUE3h6Dr9HPPioFS4KNCzify+KEoOii7z/goKS2zgbAOwhpZ1GZllpdz7XviivJM9gcAAACFeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiQXR0cmlidXRpb25SZXBvcnRpbmdDcm9zc0FwcFdlYiIsImV4cGlyeSI6MTcwNzI2Mzk5OSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+    <meta http-equiv="origin-trial"
+        content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <script type="text/javascript" async=""
+        src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/661450372/?random=1685626549824&amp;cv=11&amp;fst=1685626549824&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be35v0&amp;u_w=1280&amp;u_h=800&amp;url=https%3A%2F%2Fwww.nnn.ed.nico%2Fcontents%2Fguides%2F1454%2Fcontent&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%82%92%E4%BD%93%E9%A8%93%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86&amp;auid=1166489779.1685623891&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B113.0.5672.127%7CChromium%3B113.0.5672.127%7CNot-A.Brand%3B24.0.0.0&amp;uamb=0&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
+    <script charset="utf-8" src="https://platform.twitter.com/js/button.e7f9415a2e000feaab02c86dd5802747.js"></script>
+    <script type="text/javascript" src="https://b99.yahoo.co.jp/pagead/conversion_async.js"></script>
+</head>
+
+<body class="vsc-initialized">
+    <div id="MathJax_Message" style="display: none;"></div>
+    <div class="book">
+        <div class="book-header" role="navigation">
+            <h1>
+                <i class="fa fa-circle-o-notch fa-spin"></i>
+                <a>プログラミングを体験してみよう</a>
+            </h1>
+        </div>
+        <div class="page-wrapper" tabindex="-1" role="main">
+            <section class="main-content markdown-section">
+                <h1>プログラミングを体験してみよう</h1>
+                <p><strong>ブラウザ</strong> でプログラミングをする方法を紹介していきます。</p>
+                <h2>もくじ</h2>
+                <div class="toc">
+                    <ul>
+                        <li><a href="#what-is-browser" target="_self">ブラウザとは</a></li>
+                        <li><a href="#check-settings" target="_self">設定の確認</a></li>
+                        <li><a href="#chrome-install" target="_self">Google Chrome をインストールしよう</a>
+                            <ul>
+                                <li><a href="#how-to-chrome-install" target="_self">Chrome のインストールと起動手順</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#explain-javascript-can-move-in-browser" target="_self">JavaScript 体験</a>
+                            <ul>
+                                <li><a href="#how-to-open-console" target="_self">console を開こう</a></li>
+                                <li><a href="#javascript-calculation" target="_self">JavaScript で計算をさせてみよう</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#header-2-88479f737fea9ee5ddaeac8a30772109" target="_self">自分で考えて作ってみよう</a></li>
+                        <li><a href="#header-2-d3a00c7f2030d443ff87d5c421a91441" target="_self">Google Chrome の便利な機能</a>
+                        </li>
+                        <li><a href="#summary" target="_self">まとめ</a></li>
+                    </ul>
+                </div>
+                <h2><a name="what-is-browser"></a> ブラウザとは</h2>
+                <p><a href="https://www.nicovideo.jp/" target="_blank" rel="noopener noreferrer">ニコニコ動画</a> や <a
+                        href="https://www.google.co.jp" target="_blank" rel="noopener noreferrer">Google</a>
+                    などのホームページを表示するのに使うのが <strong>ブラウザ</strong> です。</p>
+                <h2><a name="check-settings"></a> 設定の確認</h2>
+                <div class="tab-ui" data-group-name="__default">
+                    <div class="tabcontents">
+                        <div class="tabcontent" data-tabcontent-name="win">
+                            <h4><a name="windows-username"></a> ユーザ名が半角英数字だけになっているかどうか</h4>
+                            <p>Windows をお使いの方はご自身のユーザ名を確認する必要があります。<br>
+                                なぜなら、これから使用する多くのソフトウェアは海外で作られていて、日本語の入力を想定していない場合があるためです。特に、ユーザ名が英語（半角英数字）になっていないと正常に動作しないものがあります。
+                            </p>
+                            <p>まず、<strong>スタートボタン</strong>を右クリックして、現れたメニューから<strong>ファイル名を指定して実行</strong>をクリックします。</p>
+                            <p>現れたウィンドウに以下の文字列を入力し、<strong>OK</strong>をクリックしましょう。コピー&amp;ペーストで構いません。</p>
+                            <div class="copy-target lbl-copy">
+                                <pre
+                                    class="wrap"><code>cmd
+</code><div class="copy-button-area" style="top: -16px;"><button class="copy-button" data-label="Copy">Copy</button></div></pre>
+                            </div>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/IutC/soroban/3c5b5b3c783a81ec417edfa046fb2db7/soroban-guide-1454/079865e2-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ファイル名を指定して実行</span>
+                            </div>
+                            <p>OK をクリックすると、次のような黒い画面が表示されます。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/23mT/soroban/983d28be0a0b289df810812d2c6ef56d/soroban-guide-1454/104be124-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ユーザ名</span>
+                            </div>
+                            <p>赤い枠で囲んだ部分の文字列が半角英数字だけの場合は問題ありません。<br> もし、日本語など半角英数字<strong>以外</strong>になっている場合は Windows
+                                のユーザを新しく作成する必要があります。<br> （ユーザ名を変更してもこのフォルダ名は維持されるため、新しいユーザを作る必要があります）<br>
+                                （このフォルダ名を変更するとシステムトラブルの原因となります）</p>
+                            <h4><a name="header-4-948e0e9a6a33d165155c691d4c158411"></a> もしユーザ名に半角英数字ではない文字が含まれていたら？
+                            </h4>
+                            <p><strong><a href="https://nnn-training.github.io/faq/intro/" target="_blank"
+                                        rel="noopener noreferrer">こちらの新規アカウント作成</a></strong> を参考に新しいユーザを作成してください。<br>
+                                また、今後の学習は新しいユーザで進めるようにしてください。</p>
+                        </div>
+                        <div class="tabcontent" data-tabcontent-name="mac">
+                            <p>Mac をお使いの方はここでするべきことはありません。次に進んでください。</p>
+                            <div class="next-button-wrapper">
+                                <a href="#next-step-i6c6sr0j2gg" target="_self">
+                                    <button class="next-button">
+                                        <img class="next-button-icon"
+                                            src="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/tab-ui/next-arrow-icon.png">次の手順へ
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tablinks">
+                        <div class="tablink" onclick="selectTab('win',false,'__default')" data-tablink-name="win"> Win
+                        </div>
+                        <div class="tablink" onclick="selectTab('mac',false,'__default')" data-tablink-name="mac"> Mac
+                        </div>
+                    </div>
+                </div>
+                <span id="next-step-i6c6sr0j2gg"></span>
+                <h2><a name="chrome-install"></a> Google Chrome をインストールしよう</h2>
+                <p>様々な種類のブラウザがありますが、このコースでは <strong>Google Chrome</strong>（グーグル・クローム）を利用して説明をしていきますので、 Google Chrome
+                    のインストール方法を紹介します。<br>
+                    <strong>既に Google Chrome を利用している方はダウンロード・インストールの手順を読み飛ばし、次に進んでください。</strong>
+                </p>
+                <h3><a name="how-to-chrome-install"></a> Chrome のインストールと起動手順</h3>
+                <div class="tab-ui" data-group-name="__default">
+                    <div class="tabcontents">
+                        <div class="tabcontent" data-tabcontent-name="win11">
+                            <p>お使いのブラウザを開きます。ここでは、Microsoft Edge を例にして説明していきます。<br> URL（アドレス）を入力する欄に半角英数字で
+                                <strong>www.google.co.jp</strong> と入力して <kbd>Enter</kbd> を押し、検索エンジンの Google にアクセスしましょう。
+                            </p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/8F9q/soroban/c84d7f79b9a0724678df74e36da10646/soroban-guide-1454/25ab4f72-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Edge でのURL入力欄</span>
+                            </div>
+                            <p>Google を開いたら、検索ボックスに <strong>Chrome</strong> と入力して <kbd>Enter</kbd> を押します。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/jrlp/soroban/81dfafce1c27794bbe0904d01c29c106/soroban-guide-1454/c18c0a4f-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">検索ボックスにChromeと入力</span>
+                            </div>
+                            <p>検索結果から Chrome ダウンロードページへのリンクをクリックします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/Y7qG/soroban/831697251c2ea84ef4021e3af544c6aa/soroban-guide-1454/50ce71fb-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ダウンロードページへのリンク
+                                    https://www.google.co.jp/chrome/</span>
+                            </div>
+                            <p>Chrome のサイトが見つからない方は、<a href="https://www.google.co.jp/chrome/" target="_blank"
+                                    rel="noopener noreferrer">こちらのリンク</a>から Chrome のダウンロードサイトにアクセスしてください。</p>
+                            <div class="notice-wrapper">
+                                <div class="notice"><span class="notice-title">偽サイトに注意</span>
+                                    <p>「Chrome」で検索する人を狙った、悪質な偽サイトが確認されています。</p>
+                                    <p>偽サイトからソフトウェアをダウンロードした場合、データが破損したり、個人情報が抜き取られたりする恐れがあります。</p>
+                                    <p>上の画像の赤枠で示しているように、本物のサイトの URL には「google.co.jp」あるいは「google.com」の文字列が入っています。</p>
+                                    <p><span class="underline red">Chrome
+                                            に限らず、ソフトウェアを検索してダウンロードする場合、開発元の公式サイトからダウンロードしようとしているかを確認しましょう。</span></p>
+                                </div>
+                            </div>
+                            <p>利用規約をよく読み、同意ができたらダウンロードボタンをクリックしてダウンロードします。「使用統計データと…」のチェックをつけるかどうかはどちらでも構いません（どちらでも今後の進行に影響はありません）。
+                            </p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/Wthu/soroban/bccdc77e2b0067cbb1bc83c438d97c28/soroban-guide-1454/316f2859-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ダウンロードボタン</span>
+                            </div>
+                            <p>次のようなポップアップが表示されたら、「ファイルを開く」をクリックしてください。
+                                ポップアップが消えてしまった場合は特に設定を変更していなければ、「ダウンロード」というフォルダに保存されているはずです。<br>
+                                その場合はダウンロードフォルダを開いてみましょう。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/pMhT/soroban/ce2c948eaf4e0c89f3983e840cf065b0/soroban-guide-1454/ed9ef22f-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ダウンロード完了時の表示</span>
+                            </div>
+                            <p>ダウンロードフォルダを開くと、 <code data-tooltip="📋" class="inline-tooltip">ChromeSetup(.exe)</code>
+                                というファイルがあるはずです。これをダブルクリックして起動します。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/cqAz/soroban/552e6b21139f74009630ebfb5f996916/soroban-guide-1454/2bd49723-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ダウンロードフォルダから Chrome のインストーラを起動する</span>
+                            </div>
+                            <p>ユーザアカウント制御の画面が表示されたら、「はい」あるいは「実行」をクリックし、実行を許可します。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/sjhR/soroban/d36849879a2070a587397231f415ce1a/soroban-guide-1454/1983732e-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ユーザアカウント制御の画面</span>
+                            </div>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/73Pp/soroban/2664fcf47f07313b5171ea91fe5bb4e0/soroban-guide-1454/4098a104-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Chrome をインストール中の画面</span>
+                            </div>
+                            <p>しばらく待つと次のような画面となり、自動的に Chrome がインストールされます。 インストールが終わると、自動的に起動します。</p>
+                            <p>Chrome を使い始める際に、便利にするための手順が表示されます。「開始する」をクリックします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/NXOB/soroban/9ddf702769612af3706df6533e8689b5/soroban-guide-1454/ae62ceec-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">起動直後の画面</span>
+                            </div>
+                            <p>Google が提供するアプリをブックマーク（お気に入り）に登録する手順が表示されますが、特にこだわりがなければ「スキップ」をクリックしてください。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/jCrt/soroban/b2631588f6f3205dc5c5e0873c699f1a/soroban-guide-1454/9cfb9427-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ブックマークのカスタマイズ画面</span>
+                            </div>
+                            <p>Chrome の背景デザインを選ぶ画面が表示されます。好きなものに変更できます。<br>特にこだわりがなければ「スキップ」をクリックしてください。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/59Fd/soroban/336555432b886bd4ee14446af45a0295/soroban-guide-1454/1a544807-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">デザインのカスタマイズ画面</span>
+                            </div>
+                            <p>Chrome をデフォルトのブラウザ（Windows が標準で使うブラウザ）にするか尋ねる画面が表示されます。 Web プログラミングにおいては Chrome
+                                をデフォルトのブラウザに設定しておく方が便利なので、設定しておきましょう。「デフォルトとして設定」をクリックします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/Gma2/soroban/89ab8bc4cbec1ea0a50abf1b64f2de91/soroban-guide-1454/49a3fd03-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">既定のブラウザにするか尋ねる画面</span>
+                            </div>
+                            <p>すると、デフォルトのアプリを変更する Windows の設定画面が表示されます。<br> 一番上に Google Chrome を既定のブラウザにするという項目があるので、
+                                <strong>既定値に設定</strong> ボタンをクリックしましょう。これで、Chrome がデフォルトアプリになります。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/DT7K/soroban/98aee945701c7aa3494967c8ff835cd5/soroban-guide-1454/a55baf79-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">既定のアプリを設定する画面</span>
+                            </div>
+                            <p>無事に設定ができたら、設定画面は閉じてください。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/STMn/soroban/e48dafe1e1f0f55064e8074cd370bb59/soroban-guide-1454/8b5cbecc-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">「強制的に変更する」をクリック</span>
+                            </div>
+                            <p>Chrome に戻ると、Google アカウントで Chrome
+                                にログインするかどうかを聞かれる画面が表示されます。特に必要性はないので、「いいえ」ボタンをクリックします。<br> もし Google
+                                のアカウント（ID）をお持ちであれば、ログインしても問題ありません。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/LlP1/soroban/2ac5498fe8ce51c36242ea1da07482a6/soroban-guide-1454/e9936687-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Chrome にログインするか尋ねる画面</span>
+                            </div>
+                            <p>今後は、デスクトップに追加された「Google Chrome」のアイコンをダブルクリックすることで、Chrome を起動させることができます。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/FG6I/soroban/32f0ea2eb0bd3c9b393ea7262edd9744/soroban-guide-1454/48b2513f-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">デスクトップから Chrome を起動できる</span>
+                            </div>
+                            <p>以上で、Google Chrome のインストールは完了です。</p>
+                            <p>なお、インストールが正常に完了すれば、ダウンロードフォルダ内の <code data-tooltip="📋"
+                                    class="inline-tooltip">ChromeSetup(.exe)</code> は削除しても構いません。</p>
+                            <div class="next-button-wrapper">
+                                <a href="#next-step-6qrke9m3kiv" target="_self">
+                                    <button class="next-button">
+                                        <img class="next-button-icon"
+                                            src="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/tab-ui/next-arrow-icon.png">次の手順へ
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tabcontent" data-tabcontent-name="win10">
+                            <p>お使いのブラウザを開きます。<br> URL（アドレス）を入力する欄に半角英数字で <strong>www.google.co.jp</strong> と入力して
+                                <kbd>Enter</kbd> を押し、検索エンジンの Google にアクセスしましょう。</p>
+                            <h4><a name="header-4-6e019169f92f4993d0e977a3666e7648"></a> Microsoft Edge の例</h4>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/8F9q/soroban/c84d7f79b9a0724678df74e36da10646/soroban-guide-1454/25ab4f72-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Edge でのURL入力欄</span>
+                            </div>
+                            <p>Google を開いたら、検索ボックスに <strong>Chrome</strong> と入力して <kbd>Enter</kbd> を押します。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/jrlp/soroban/81dfafce1c27794bbe0904d01c29c106/soroban-guide-1454/c18c0a4f-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Google で Chrome を検索</span>
+                            </div>
+                            <p>検索結果から Chrome ダウンロードページへのリンクをクリックします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/pajB/soroban/60070779e4ad0d74538251432a7d1185/soroban-guide-1454/f5ae0f0c-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ダウンロードページへのリンク
+                                    https://www.google.co.jp/chrome/</span>
+                            </div>
+                            <p>Chrome のサイトが見つからない方は、<a href="https://www.google.co.jp/chrome/" target="_blank"
+                                    rel="noopener noreferrer">こちらのリンク</a>から Chrome のダウンロードサイトにアクセスしてください。</p>
+                            <div class="notice-wrapper">
+                                <div class="notice"><span class="notice-title">偽サイトに注意</span>
+                                    <p>「Chrome」で検索する人を狙った、悪質な偽サイトが確認されています。</p>
+                                    <p>偽サイトからソフトウェアをダウンロードした場合、データが破損したり、個人情報が抜き取られたりする恐れがあります。</p>
+                                    <p>上の画像の赤枠で示しているように、本物のサイトの URL には「google.co.jp」あるいは「google.com」の文字列が入っています。</p>
+                                    <p><span class="underline red">Chrome
+                                            に限らず、ソフトウェアを検索してダウンロードする場合、開発元の公式サイトからダウンロードしようとしているかを確認しましょう。</span></p>
+                                </div>
+                            </div>
+                            <p>ダウンロードボタンをクリックしてダウンロードします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/xZTG/soroban/b09ae88366fec55cd8bc04b3405ac523/soroban-guide-1454/69de5069-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ダウンロードボタン</span>
+                            </div>
+                            <p>利用規約をよく読み、同意ができたらインストールボタンをクリックします。「使用統計データと…」のチェックをつけるかどうかはどちらでも構いません（どちらでも今後の進行に影響はありません）。
+                            </p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/sQMP/soroban/b00273941b1cace7eed4def50f59e0e0/soroban-guide-1454/d256a779-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">利用規約</span>
+                            </div>
+                            <p>次のような画面が表示されたら、「保存」をクリックしてください。 特に設定を変更していなければ、「ダウンロード」というフォルダに保存されているはずです。<br>
+                                もちろんここから実行しても構いませんが、ここではダウンロードフォルダを開いてみましょう。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/djYE/soroban/4260cfbf20dd6c561bb266243b22749b/soroban-guide-1454/bbc3c7fb-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ダウンロード処理の選択</span>
+                            </div>
+                            <p>「ダウンロードが完了しました」と表示されたら、「フォルダーを開く」をクリックします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/2KCJ/soroban/25130485a3f4cab268ac4716c31b5a30/soroban-guide-1454/4246a8b9-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ダウンロード完了時の表示</span>
+                            </div>
+                            <p>ダウンロードフォルダを開くと、 <code data-tooltip="📋" class="inline-tooltip">ChromeSetup(.exe)</code>
+                                というファイルがあるはずです。これをダブルクリックして起動します。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/Xfw6/soroban/0962da6d41dbb00ecce79ae48ca026d3/soroban-guide-1454/64253f9c-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Chrome のインストーラを起動する</span>
+                            </div>
+                            <p>セキュリティの警告が表示されたら「実行」をクリックします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/gSYW/soroban/8bf3ccbabfeab89696d72b33f71d3218/soroban-guide-1454/9bd30328-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Chrome のインストーラを起動する</span>
+                            </div>
+                            <p>ユーザアカウント制御の画面が表示されたら、「はい」あるいは「実行」をクリックし、実行を許可します。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/BI9Y/soroban/7b5eb58325070bac148b1af6f0902929/soroban-guide-1454/689df7b9-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Chrome のインストーラを起動する</span>
+                            </div>
+                            <p>しばらく待つと次のような画面となり、自動的に Chrome がインストールされます。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/daI3/soroban/328e037bb8e1442117ef808dcc8787d9/soroban-guide-1454/5de62df1-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Chrome をインストール中の画面</span>
+                            </div>
+                            <p>インストールが終わると、自動的に Chrome が起動します。</p>
+                            <p>Chrome を使い始める際に、便利にするための手順が表示されます。「開始する」をクリックします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/NXOB/soroban/9ddf702769612af3706df6533e8689b5/soroban-guide-1454/ae62ceec-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">起動直後の画面</span>
+                            </div>
+                            <p>Google が提供するアプリをブックマーク（お気に入り）に登録する手順が表示されますが、特にこだわりがなければ「スキップ」をクリックしてください。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/jCrt/soroban/b2631588f6f3205dc5c5e0873c699f1a/soroban-guide-1454/9cfb9427-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ブックマークのカスタマイズ画面</span>
+                            </div>
+                            <p>Chrome の背景デザインを選ぶ画面が表示されます。好きなものに変更できます。<br>特にこだわりがなければ「スキップ」をクリックしてください。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/59Fd/soroban/336555432b886bd4ee14446af45a0295/soroban-guide-1454/1a544807-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">デザインのカスタマイズ画面</span>
+                            </div>
+                            <p>Chrome をデフォルトのブラウザ（Windows が標準で使うブラウザ）にするか尋ねる画面が表示されます。 Web プログラミングにおいては Chrome
+                                をデフォルトのブラウザに設定しておく方が便利なので、設定しておきましょう。「デフォルトとして設定」をクリックします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/Gma2/soroban/89ab8bc4cbec1ea0a50abf1b64f2de91/soroban-guide-1454/49a3fd03-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">既定のブラウザにするか尋ねる画面</span>
+                            </div>
+                            <p>すると、デフォルトのアプリを変更する Windows の設定画面が表示されます。<br> 下の方に「Web
+                                ブラウザ」という欄があるので、ここに表示されている現在のブラウザ（Microsoft Edge など）の名前をクリックし、表示されたアプリ一覧から Google Chrome
+                                をクリックします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/URdT/soroban/46287d618e70ac3b6116738e1e920672/soroban-guide-1454/dff238d8-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">既定のアプリを設定する画面</span>
+                            </div>
+                            <p>変更してよいか聞かれるので、「強制的に変更する」をクリックします。<br> 無事に設定ができたら、「デフォルトのアプリ」画面は閉じてください。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/STMn/soroban/e48dafe1e1f0f55064e8074cd370bb59/soroban-guide-1454/8b5cbecc-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">「強制的に変更する」をクリック</span>
+                            </div>
+                            <p>Chrome に戻ると、Google アカウントで Chrome
+                                にログインするかどうかを聞かれる画面が表示されます。特に必要性はないので、「いいえ」ボタンをクリックします。<br> もし Google
+                                のアカウント（ID）をお持ちであれば、ログインしても問題ありません。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/LlP1/soroban/2ac5498fe8ce51c36242ea1da07482a6/soroban-guide-1454/e9936687-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Chrome にログインするか尋ねる画面</span>
+                            </div>
+                            <p>今後は、デスクトップに追加された「Google Chrome」のアイコンをダブルクリックすることで、Chrome を起動させることができます。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/FG6I/soroban/32f0ea2eb0bd3c9b393ea7262edd9744/soroban-guide-1454/48b2513f-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">デスクトップから Chrome を起動できる</span>
+                            </div>
+                            <p>以上で、Google Chrome のインストールは完了です。</p>
+                            <p>なお、インストールが正常に完了すれば、ダウンロードフォルダ内の <code data-tooltip="📋"
+                                    class="inline-tooltip">ChromeSetup(.exe)</code> は削除しても構いません。</p>
+                            <div class="next-button-wrapper">
+                                <a href="#next-step-6qrke9m3kiv" target="_self">
+                                    <button class="next-button">
+                                        <img class="next-button-icon"
+                                            src="https://cdn.nnn.ed.nico/materials/share/progedu/intro-2023/plugins/tab-ui/next-arrow-icon.png">次の手順へ
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tabcontent" data-tabcontent-name="mac">
+                            <p>お使いのブラウザを開きます。ここでは、 Safari を例にして説明していきます。<br> ブラウザには<strong>検索欄</strong>がありますので、 <code
+                                    data-tooltip="📋" class="inline-tooltip">Chrome</code> と入力して <kbd>Enter</kbd> を押します。
+                            </p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/T8ga/soroban/e3a7525a4db2053f7b624d48fd395f2c/soroban-guide-1454/502c8a7e-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Chrome と入力し、 Enter キーを押す</span>
+                            </div>
+                            <p>Google の公式サイトから Chrome をダウンロードします。 <code data-tooltip="📋"
+                                    class="inline-tooltip">https</code> から始まる URL に <code data-tooltip="📋"
+                                    class="inline-tooltip">google.co.jp</code> と含まれているものが公式サイトです。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/MdJv/soroban/8caeb64a6fdd87e1472aea650f745dff/soroban-guide-1454/7f99c7c8-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Chrome のダウンロードサイトにアクセスする</span>
+                            </div>
+                            <div class="notice-wrapper">
+                                <div class="notice"><span class="notice-title">偽サイトに注意</span>
+                                    <p>「Chrome」で検索する人を狙った、悪質な偽サイトが確認されています。</p>
+                                    <p>偽サイトからソフトウェアをダウンロードした場合、データが破損したり、個人情報が抜き取られたりする恐れがあります。</p>
+                                    <p>上の画像の赤枠で示しているように、本物のサイトの URL には「google.co.jp」あるいは「google.com」の文字列が入っています。</p>
+                                    <p><span class="underline red">Chrome
+                                            に限らず、ソフトウェアを検索してダウンロードする場合、開発元の公式サイトからダウンロードしようとしているかを確認しましょう。</span></p>
+                                </div>
+                            </div>
+                            <p>画面中央に表示されている「Chrome をダウンロード」というボタンをクリックします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/CIYK/soroban/9fb3905cc5db619626a7084d624e5902/soroban-guide-1454/7251ea03-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ダウンロードボタンをクリック</span>
+                            </div>
+                            <p>すると、<code data-tooltip="📋" class="inline-tooltip">Intel</code> プロセッサ搭載か <code
+                                    data-tooltip="📋" class="inline-tooltip">Apple</code> プロセッサ搭載かを聞かれます。<br>
+                                画面下部の誘導の通り、お使いの Mac がどちらのプロセッサを持っているかを確認します。その後、合う方のボタンをクリックしましょう。<br> 調べてもよくわからなかった場合は、
+                                <code data-tooltip="📋" class="inline-tooltip">Intel</code>
+                                のほうをクリックしましょう。こちらなら実はどちらでも動作します。<br> ちなみに、<code data-tooltip="📋"
+                                    class="inline-tooltip">左上のAppleメニュー</code> は、リンゴの形のマークをクリックすることで開けます。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/aRPS/soroban/2c47e56305e2a34c007e1e6b159c21f0/soroban-guide-1454/47dc922f-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ダウンロードボタンをクリック</span>
+                            </div>
+                            <p>ボタンをクリックすると、ダウンロードが始まります。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/O4h2/soroban/9020ffcb20b092527ff1fd49af05503b/soroban-guide-1454/268fac7a-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ダウンロードが開始する画面</span>
+                            </div>
+                            <p>この画面になったら、ダウンロードがきちんと始まっているかを確認してください。<br> たとえば多くの Safari では右上に <code data-tooltip="📋"
+                                    class="inline-tooltip">↓</code> この記号のついたマークが表示されます。<br>
+                                もしダウンロードが始まっていないようなら、スクロールして青字のテキストをクリックします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/MjUI/soroban/a80f1904bb42ca3b0966fd5236a3a17c/soroban-guide-1454/febe1f63-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ダウンロードが始まらないときはここをクリック</span>
+                            </div>
+                            <p>するとダウンロードが始まるはずです。もしダウンロードを許可するか聞かれた場合は、許可しましょう。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/1r5X/soroban/d1528e7c204647496531e9d442efec8b/soroban-guide-1454/caf6256e-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ダウンロードを許可するかを聞かれている画面</span>
+                            </div>
+                            <p>ダウンロードが完了したら、 Finder (ファインダー) を開きます。特に設定を変更していない macOS であれば、画面下部に位置する Dock の左端にあるはずです。
+                            </p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/hl5d/soroban/562d04db5ddfcf75267b74a7b6c373d0/soroban-guide-1454/09f928a7-private.jpg?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Finder を開く</span>
+                            </div>
+                            <p>ダウンロードフォルダを開き、先ほどダウンロードした <code data-tooltip="📋"
+                                    class="inline-tooltip">googlechrome.dmg</code> をダブルクリックで起動します。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/PxL4/soroban/9c699822076f5bae81b50e5c38cfde37/soroban-guide-1454/564d1082-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">googlechrome.dmg を開く</span>
+                            </div>
+                            <p>少し待つと、このような画面が表示されるので、<code data-tooltip="📋"
+                                    class="inline-tooltip">Google Chrome.app</code>
+                                と書いてあるアイコンを、下のフォルダのアイコンまでドラッグ&amp;ドロップします。この操作によって、Google Chrome がお使いの Mac にコピーされます。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/7mT1/soroban/1f3efc08168ad59d57dbfbfd7e18718e/soroban-guide-1454/0b3327ab-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">アイコンをドラッグ&amp;ドロップ</span>
+                            </div>
+                            <p>コピーが完了したら、先ほどのアイコンが 2 つ並んだ画面を閉じてください。その後、Finder のデバイス欄に表示されている Google Chrome
+                                の横にある取り出しボタンをクリックしてください。なお、正常にインストールできていれば、先ほどダウンロードした <code data-tooltip="📋"
+                                    class="inline-tooltip">googlechrome.dmg</code> は削除しても構いません。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/oR64/soroban/56c1d1baadc6ae7e9e1d86de8d87b43b/soroban-guide-1454/16fb0c42-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">取り出しボタンをクリック</span>
+                            </div>
+                            <p>続いて、アプリケーションフォルダを開いて <code data-tooltip="📋"
+                                    class="inline-tooltip">Google Chrome.app</code> をダブルクリックしてください。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/HSeK/soroban/ba74e4bbd647878ae8ee8c6f119fe82c/soroban-guide-1454/da6759d7-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Google Chromeを起動</span>
+                            </div>
+                            <p>Google Chrome はインターネット上からダウンロードしたプログラムなので、 Mac がセキュリティ的に開いても問題ないかを聞いてきます。今回は Google
+                                の公式サイトからダウンロードしており、安全だと判断できるので「開く」をクリックします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/ewzZ/soroban/7a1e129804c7bb85e24ea69fafc92603/soroban-guide-1454/f72e595c-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">「開く」をクリック</span>
+                            </div>
+                            <p>「Google Chrome へようこそ」というダイアログが表示されたら、「Google Chrome を規定のブラウザとして設定する」をクリックしてチェックを入れます。<br>
+                                「使用統計データや…」という項目のチェックはよく分からなければ外して大丈夫です。<br> 適切にチェックを入れ終えたら、「Google Chrome を起動」をクリックします。
+                            </p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/OPcn/soroban/6e6e1551f50b954cd633f2a8c5b7026c/soroban-guide-1454/1deb4d79-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">「Google Chromeへようこそ」ダイアログ</span>
+                            </div>
+                            <p>「"Chrome"に変更」と書いてあるボタンをクリックします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/hZjR/soroban/222cf586cf5d6b1eef020370a430a94e/soroban-guide-1454/4ed68fd8-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">「"Chrome"に変更」をクリック</span>
+                            </div>
+                            <p>Chrome を使い始める際に、便利にするための手順が表示されます。「開始する」をクリックします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/pvDN/soroban/4e7348635104b6c29ffb80fa10bd33e8/soroban-guide-1454/f5abc157-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">起動直後の画面</span>
+                            </div>
+                            <p>Google が提供するアプリをブックマーク（お気に入り）に登録する手順が表示されますが、特にこだわりがなければ「スキップ」をクリックしてください。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/lYLp/soroban/dd33d887bbc43e1b3237cbd7bef1ed75/soroban-guide-1454/90f5818f-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">ブックマークのカスタマイズ画面</span>
+                            </div>
+                            <p>Google アカウントで Chrome にログインするかどうかを聞かれる画面が表示されます。特に必要性はないので、「スキップ」ボタンをクリックします。<br> もし
+                                Google のアカウント（ID）をお持ちであれば、ログインしても問題ありません。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/4WNZ/soroban/7749524254371fe1851c6d6e6f7068d1/soroban-guide-1454/5fe06b39-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Chrome にログインするか尋ねる画面</span>
+                            </div>
+                            <p>無事、 Google Chrome が起動すればインストール完了です。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/FM58/soroban/b78b2f94deffd1bfc1c195af3fa7f4a9/soroban-guide-1454/e21b8d7f-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">インストール完了</span>
+                            </div>
+                            <p>また、これから頻繁に Google Chrome を使っていくことになるので、 Dock に追加しておきましょう。 Dock 上で Chrome
+                                のアイコンを右クリック（MacBook, MacBook Air, MacBook Pro をお使いの場合、初期設定であれば 2
+                                本指でクリック）し、「オプション」から「Dock に追加」をクリックします。</p>
+                            <div class="image-with-caption">
+                                <img
+                                    src="https://cdn.fccc.info/tBJM/soroban/0f2dc91f5ec9661aa5aa6fde8b60b8e4/soroban-guide-1454/15d940cd-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                                <span class="imagecaption screenshot">Dock に追加する</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tablinks">
+                        <div class="tablink" onclick="selectTab('win11',false,'__default')" data-tablink-name="win11">
+                            Win11 </div>
+                        <div class="tablink" onclick="selectTab('win10',false,'__default')" data-tablink-name="win10">
+                            Win10 </div>
+                        <div class="tablink" onclick="selectTab('mac',false,'__default')" data-tablink-name="mac"> Mac
+                        </div>
+                    </div>
+                </div>
+                <span id="next-step-6qrke9m3kiv"></span>
+                <h2><a name="explain-javascript-can-move-in-browser"></a> JavaScript 体験</h2>
+                <p>インストールした Chrome を使って、JavaScript（ジャバスクリプト）というプログラミング言語でのプログラミングを体験してみましょう。</p>
+                <h3><a name="how-to-open-console"></a> console を開こう</h3>
+                <p>Chrome の右上のその他ボタンをクリックし、出てきたメニューの中の「その他のツール」にマウスカーソルを合わせると、その左にさらにメニューが出てきます。<br>
+                    その中から「デベロッパーツール」を選択します。</p>
+                <div class="dictionary">
+                    <span class="word">developer</span>（デベロッパー、ディベロッパー）: 開発者のこと。
+                </div>
+                <div class="image-with-caption">
+                    <img
+                        src="https://cdn.fccc.info/1M3o/soroban/78f0f000a1e417de8168bb74a05eaf13/soroban-guide-1454/60a083c7-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                    <span class="imagecaption screenshot">ブラウザのその他ボタン</span>
+                </div>
+                <p>なお、デベロッパーツールは、ブラウザの画面上を右クリックし、メニューから「検証」をクリックして開くこともできます。</p>
+                <div class="image-with-caption">
+                    <img
+                        src="https://cdn.fccc.info/jOoD/soroban/413b4eec3137ba85f352bc805fdc76b7/soroban-guide-1454/d7ea6efc-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                    <span class="imagecaption screenshot">右クリックで「検証」を選択する</span>
+                </div>
+                <p>また、デベロッパーツールは、ショートカットキーを利用しても起動できます。</p>
+                <div class="tab-ui" data-group-name="__default">
+                    <div class="tabcontents">
+                        <div class="tabcontent" data-tabcontent-name="win">
+                            <p>Windows の場合は、次の 2 つのうち好きな方を使ってください。</p>
+                            <ul>
+                                <li><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>j</kbd> を同時に押す</li>
+                                <li><kbd>F12</kbd> を押す</li>
+                            </ul>
+                        </div>
+                        <div class="tabcontent" data-tabcontent-name="mac">
+                            <p>Mac の場合は、<kbd>Command</kbd> + <kbd>Option</kbd> + <kbd>i</kbd> を同時に押してください。</p>
+                        </div>
+                    </div>
+                    <div class="tablinks">
+                        <div class="tablink" onclick="selectTab('win',false,'__default')" data-tablink-name="win"> Win
+                        </div>
+                        <div class="tablink" onclick="selectTab('mac',false,'__default')" data-tablink-name="mac"> Mac
+                        </div>
+                    </div>
+                </div>
+                <span id="next-step-6qry6nwpcsk"></span>
+                <p>デベロッパーツールの console タブを選択します。</p>
+                <div class="image-with-caption">
+                    <img
+                        src="https://cdn.fccc.info/xgdv/soroban/e250fdb9fb3acf7e70d13122855b48ff/soroban-guide-1454/ceb14294-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                    <span class="imagecaption screenshot">consoleタブ</span>
+                </div>
+                <p><a name="about-console"></a></p>
+                <p><strong>console</strong>（コンソール）は、JavaScript のプログラムを実行できる環境です。</p>
+                <p><a href="#how-to-open-console" class="return-game-book-button green-button" target="_self">console
+                        を開けない、もう一度手順を読む</a></p>
+                <p>なお、console を開いた時に以下のように黄色や赤色でエラー表示が出ることもありますが、これは Web
+                    ページ側に存在している問題が表示されているだけです。この節の学習には支障がないので、現時点で気にする必要はありません。</p>
+                <div class="image-with-caption">
+                    <img
+                        src="https://cdn.fccc.info/xrfP/soroban/a020f0d6a8790bb99a378d0f3e44804d/soroban-guide-1454/6b983ecc-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                    <span class="imagecaption screenshot">エラーが出ることもあるが、現時点で気にする必要はない。</span>
+                </div>
+                <div class="tip"><a name="devtools-localization"></a><span class="tip-title">デベロッパーツールを日本語化する</span>
+                    <p>デベロッパーツールは日本語でも使用できます。</p>
+                    <p>右上にある歯車のアイコンをクリックして <strong>Settings</strong> を開きます。<br> console
+                        タブの中にも歯車のアイコンがあるので、間違えないように注意しましょう。デベロッパーツール設定用の歯車のアイコンは、点が縦に3つ並んだアイコンの左隣にあります。</p>
+                    <div class="image-with-caption">
+                        <img
+                            src="https://cdn.fccc.info/zA1m/soroban/73e8927f42bbe3e53a7ffd1b96dae70d/soroban-guide-1454/f929eb73-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                        <span class="imagecaption screenshot">歯車のアイコンをクリック</span>
+                    </div>
+                    <p><strong>Preferences</strong> の <strong>Language</strong> から <strong>Japanese - 日本語</strong>
+                        を選択して、デベロッパーツールを再読み込みしてください。</p>
+                    <div class="image-with-caption">
+                        <img
+                            src="https://cdn.fccc.info/1MgF/soroban/3f5af2fe6997ffea1cd7c5c17cf472d5/soroban-guide-1454/16891e64-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                        <span class="imagecaption screenshot">Preferences &gt; Language から日本語を選択</span>
+                    </div>
+                    <p>なお、これ以降のスクリーンショットは英語のままです。<br> 日本語で使用する場合は適宜読み替えてください。</p>
+                </div>
+                <hr>
+                <h3><a name="javascript-calculation"></a> JavaScript で計算をさせてみよう</h3>
+                <p>それでは実際に、プログラミングの第一歩を踏み出してみましょう。ブラウザに計算をさせる命令を出してみます。</p>
+                <p>この console に、<strong>半角・英数字入力</strong>で<br>
+                    <code data-tooltip="📋" class="inline-tooltip">alert(25 + 25);</code><br> と入力して、 <kbd>Enter</kbd>
+                    を押してみましょう。
+                </p>
+                <p>Windows の場合は <kbd>半角/全角</kbd> を押し、Mac の場合は <kbd>英数</kbd> を押すことで、半角・英数字入力ができます。</p>
+                <p><code data-tooltip="📋" class="inline-tooltip">(</code> は、 <kbd>Shift</kbd> を押しっぱなしにしながら <kbd>8</kbd>
+                    を押すと出すことができます。<br>
+                    <code data-tooltip="📋" class="inline-tooltip">)</code> は、 <kbd>Shift</kbd> を押しっぱなしにしながら
+                    <kbd>9</kbd> を押すと出すことができます。<br>
+                    <code data-tooltip="📋" class="inline-tooltip">+</code> は、 <kbd>Shift</kbd> を押しっぱなしにしながら
+                    <kbd>;</kbd> を押すと出すことができます。
+                </p>
+                <p><kbd>Shift</kbd> は、 PC によっては Shift と書かれておらず上矢印（⇧）のみで示されていることもありますが、いずれの場合も <kbd>Z</kbd> の左隣にあります。<br>
+                    なお、上に示した入力方法は一般的な日本語キーボードの場合です。英語キーボードなどでは、入力方法が異なりますのでご注意ください。</p>
+                <p>もし console に何も入力できないという場合は、console の <code data-tooltip="📋" class="inline-tooltip">&gt;</code>
+                    と表示されている部分のあたりをクリックしてから入力してみてください。</p>
+                <div class="image-with-caption">
+                    <img
+                        src="https://cdn.fccc.info/tRhQ/soroban/2e7f5d9d3d12716db23e00f134b1eba1/soroban-guide-1454/fb52b97f-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                    <span class="imagecaption screenshot">alert(表示したい計算式); と書くと計算ができます</span>
+                </div>
+                <p><code data-tooltip="📋" class="inline-tooltip">50</code> という計算結果が表示されます。<br> なお、以下の画像で <code
+                        data-tooltip="📋" class="inline-tooltip">www.google.co.jp</code> と表示されている部分はこの操作をした Web
+                    ページによって変わるため、別の文字列が表示されていても気にする必要はありません。</p>
+                <div class="image-with-caption">
+                    <img
+                        src="https://cdn.fccc.info/7oxL/soroban/f9a5105af0c631a7f605309b2e9eb908/soroban-guide-1454/aea19dcb-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                    <span class="imagecaption screenshot">この結果表示の画面のことを「アラートダイアログ」と呼びます</span>
+                </div>
+                <p>おめでとうございます！命令が実行されました。<br>
+                    <span class="aggressive">これがプログラミングの第一歩です。</span>
+                </p>
+                <p>右上の × ボタンでデベロッパーツールを閉じて終わりましょう。</p>
+                <div class="image-with-caption">
+                    <img
+                        src="https://cdn.fccc.info/boQY/soroban/6d429e35b6df199ee75d9c0a51d97213/soroban-guide-1454/92b3dce1-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                    <span class="imagecaption screenshot">閉じるボタン</span>
+                </div>
+                <p><a href="#javascript-calculation" class="return-game-book-button green-button"
+                        target="_self">計算をさせることができなかった、もう一度手順を読む</a></p>
+                <div class="dictionary">
+                    <span class="word">alert</span>（アラート）: 警告という意味。ここでは、警告用の表示（アラートダイアログ）を使って計算結果を表示させている。
+                </div>
+                <h2><a name="header-2-88479f737fea9ee5ddaeac8a30772109"></a> 自分で考えて作ってみよう</h2>
+                <p>デベロッパーツールを使ってもっと複雑な計算をさせてみましょう。</p>
+                <p>自慢したいことや面白い結果、疑問点がでたら、 <a href="https://www.nnn.ed.nico/questions" target="_blank">Q&amp;A</a>
+                    に「プログラミング」と「宿題」のタグをつけて スクリーンショットと書いたコードと一緒に投稿してみましょう。</p>
+                <h2><a name="header-2-d3a00c7f2030d443ff87d5c421a91441"></a> Google Chrome の便利な機能</h2>
+                <p>表示されている文字をドラッグして右クリックし、<code data-tooltip="📋" class="inline-tooltip">Googleで「○○」を検索</code>
+                    をクリックすることで、すぐに検索できます。<br> 学習中に分からない用語があった場合など、積極的に活用してみてください。</p>
+                <div class="image-with-caption">
+                    <img
+                        src="https://cdn.fccc.info/BDr9/soroban/173d3b8cab27aeb43e1666e8ccbc5287/soroban-guide-1454/efd17c51-private.png?Expires=1685669747&amp;Key-Pair-Id=APKAIXOVMBEKCVHZBGWQ&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZmNjYy5pbmZvLyovc29yb2Jhbi8qL3Nvcm9iYW4tZ3VpZGUtMTQ1NC8qLioiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODU2Njk3NDd9fX1dfQ__&amp;Signature=nk5s-ro~JP3iYHsa6XsHKt40ecQtHv9~6tujZAxTsidwU6w3XaN2ndYVfNO1o-3dP4E-X7LQPQ3N3YDs3EiZ1lv-IC2rvTT~l1RxQjFPd9oZ2mBtUT1oyAvHDqAWdQHoYzWzO0KNMc2RV2CZZ0BP0-bbesoivo8LT8QNuyNT-Gi0lhNRvI-twUt0AIRSAXS3TRTXWz3zznSEiV1jn7W54lmTMSgXEiVNWA5DBUNBGc9R6Kb~t5FS0GbhCeeOXiN8EuHkt72hWt~xJ9t77HsAJM33jHN2ItUNPXDmkvFAPW5QNDNOaxpabCvprAtrWieQQrTN~4H1euBFHetDSSPaDA__">
+                    <span class="imagecaption screenshot">Chrome の検索メニュー</span>
+                </div>
+                <h2 class="summary-h2"><a name="summary"></a> まとめ</h2>
+                <div>
+                    <ol>
+                        <li><a href="#what-is-browser" target="_self">ブラウザ</a> ではウェブページ（Web コンテンツ）を表示できる。</li>
+                        <li><a href="#what-is-browser" target="_self">ブラウザ</a> では JavaScript のプログラムを動かすことができる。</li>
+                    </ol>
+                    <div class="popup" data-btext="実際に使われている例">
+                        <div class="popup-container" style="display: none;">
+                            <div class="popup-content">
+                                <div>
+                                    <h2><a name="header-2-850313fc9d895d6f14e239209959c3bf"></a> 実際に使われている例を確認する</h2>
+                                    <p>今回は、Chrome というブラウザについて知りました。<br> Chrome がどれほど使われているのかをみてみましょう。<br>
+                                        <a href="https://gs.statcounter.com/" target="_blank"
+                                            rel="noopener noreferrer">こちら</a>をご覧ください。<br> 2023年1月現在のブラウザ別使用率でChromeは 65%
+                                        程度と、3人に2人に使われています。 （随時更新されているので、統計データは推移している可能性があります）<br> Chrome
+                                        を使っていくと、世の多くの人と同じ条件でWebページを利用できます。<br> 安心して使っていきましょう。
+                                    </p>
+                                </div>
+                                <div class="textalign-center"><button class="popup-button">閉じる</button></div>
+                            </div>
+                        </div>
+                        <div class="textalign-center"><button class="popup-button">実際に使われている例</button></div>
+                    </div>
+                </div>
+                <h2 class="practice-h2"><a name="practice"></a> 練習</h2>
+                <ol>
+                    <li>掛け算 8327 × 9874 の結果をアラートダイアログに表示させてみましょう。掛け算には <code data-tooltip="📋"
+                            class="inline-tooltip">*</code> という記号を使います。 この記号のことを、<strong>アスタリスク</strong> と呼びます。 キーボードの
+                        <kbd>Shift</kbd> + <kbd>:</kbd> を押すと使うことができます。<br> 例: 2 * 3</li>
+                    <li>アラートダイアログに「こんにちは」という文章を表示してみましょう。文章は、<code data-tooltip="📋"
+                            class="inline-tooltip">'</code>という記号で囲むとプログラムに記述できます。
+                        この記号のことを、<strong>シングルクォーテーション</strong>と呼びます。 キーボードの <kbd>Shift</kbd> + <kbd>7</kbd>
+                        を押すと使うことができます。<br> 例: 'あいうえお'</li>
+                </ol>
+                <p><strong>【注意】記号は半角で入力しましょう。</strong></p>
+                <div class="tip"><a name="chrome-fake"></a><span class="tip-title">記号の入力方法</span>
+                    <p>一般に Shift を押しながら入力することで、キーボードの上部に印字された記号を入力できます。</p>
+                    <p>半角と全角の切り替えは<br> Widows の場合： <kbd>［半角/全角］</kbd> を押す<br> Mac の場合： <kbd>英数</kbd> で半角、 <kbd>かな</kbd>
+                        で全角入力に切り替えることができます。<br></p>
+                </div>
+                <h2><a name="header-2-0285914711d1d50edeecaa1215259bbc"></a> progedu Slack に参加しよう</h2>
+                <p>N予備校プログラミング入門コースでは Slack のワークスペース progedu を用意しています。<br> まだ入っていない方はぜひ入っておきましょう。入り方は<a
+                        href="https://www.nnn.ed.nico/contents/guides/6245" target="_blank">こちらのページ</a>で確認できます。</p>
+                <h2 class="practice-h2"><a name="practice_answer"></a> 練習の答え</h2>
+                <p><a id="show-answer-button" onclick="toggleAnswer()" class="game-book-button">解いてみたので、答えを表示する</a></p>
+                <div class="answer">
+                    <h4><a name="header-4-5167295f9feddf6ae8822f821b658d7b"></a> 1. の答え</h4>
+                    <p><code data-tooltip="📋" class="inline-tooltip">alert(8327 * 9874);</code></p>
+                    <p>実行すると、<strong>82220798</strong> と表示されます。</p>
+                    <h4><a name="header-4-69b7646d8ea3e928b6855fef6bf9b042"></a> 2. の答え</h4>
+                    <p><code data-tooltip="📋" class="inline-tooltip">alert('こんにちは');</code></p>
+                    <p>実行すると、<strong>こんにちは</strong> と表示されます。</p>
+                </div>
+                <h2 class="ending-h2">お疲れさまでした！</h2>
+                <p>学習したことをSNSで報告しよう！</p>
+                <p>
+                    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true"
+                        allowfullscreen="true"
+                        class="twitter-share-button twitter-share-button-rendered twitter-tweet-button"
+                        style="position: static; visibility: visible; width: 82px; height: 28px;"
+                        title="Twitter Tweet Button"
+                        src="https://platform.twitter.com/widgets/tweet_button.2b2d73daf636805223fb11d48f3e94f7.en.html#dnt=false&amp;hashtags=%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%20%23N%E4%BA%88%E5%82%99%E6%A0%A1%20%23N%E4%BA%88%E5%82%99%E6%A0%A1%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E5%85%A5%E9%96%80&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=https%3A%2F%2Fwww.nnn.ed.nico%2Fcontents%2Fguides%2F1454%2Fcontent&amp;size=l&amp;text=%23N%E4%BA%88%E5%82%99%E6%A0%A1%20%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E5%85%A5%E9%96%80%E3%82%B3%E3%83%BC%E3%82%B9%201%E7%AB%A03%E7%AF%80%20%0A%E3%80%8E%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%82%92%E4%BD%93%E9%A8%93%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86%E3%80%8F%E3%81%AE%E5%AD%A6%E7%BF%92%E3%81%8C%E5%AE%8C%E4%BA%86%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%EF%BC%81%0A&amp;time=1685626550029&amp;type=share&amp;url=https%3A%2F%2Fwww.nnn.ed.nico%2Fpages%2Fprogramming%2F"
+                        data-url="https://www.nnn.ed.nico/pages/programming/"></iframe>
+                    <script src="https://platform.twitter.com/widgets.js" charset="utf-8" async=""></script>
+                </p>
+                <p>プログラミングコースのよくある質問ページはこちら</p>
+                <a href="https://nnn-training.github.io/faq/intro/" class="green-button" target="_blank"
+                    rel="noopener noreferrer">N 予備校プログラミングコース FAQ・トラブルシューティング</a>
+            </section>
+            <div class="news">
+                <h2>お知らせ</h2>
+                <h3>Webページコンテスト</h3>
+                <p>N 予備校では、N 予備校プログラミング入門コースで学んだ方々がプログラミングの成果物を競うコンテストを年 2 回（夏・冬）開催しています。 夏のコンテストは例年8月ごろ、冬のコンテストは例年 1
+                    月ごろにそれぞれ開催しています。</p>
+                <p><a href="https://progedu.github.io/webappcontest/" class="green-button" target="_blank"
+                        rel="noopener noreferrer">N予備校 Web アプリコンテスト 公式サイト</a></p>
+                <p>なお、過去の作品は公式サイトの過去のコンテストページから見ることができます。</p>
+                <h3>N予備校 IT企業内定報告・内定体験記アンケート</h3>
+                <p>N予備校では、プログラミングコースまたはWebデザインコースを受講し、みごと IT企業
+                    に内定されたN予備校会員またはN高生S高生、N中等部在学生に、内定された企業1社につき（最大5社）Amazonギフト券 1,000円 を進呈いたします。<br>
+                    また、内定体験記まで記載いただいた方には追加で Amazonギフト券 5,000円 を進呈いたします。</p>
+                <p>詳しくは<a href="https://questant.jp/q/jobresult" target="_blank" rel="noopener noreferrer">N予備校
+                        IT企業内定報告・内定体験記アンケートページ</a>をご確認ください。</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        codeBlockDecorator();
+        consoleBlockDecorator();
+        wrapCode();
+
+    </script>
+    <script>
+        templateBlock();
+
+    </script>
+    <script src="https://cdn.nnn.ed.nico/kokuban/guideContentMathJaxChannel-9bbc191d6b28c85ee9ca.js"></script>
+
+
+
+
+    <iframe scrolling="no" frameborder="0" allowtransparency="true"
+        src="https://platform.twitter.com/widgets/widget_iframe.2b2d73daf636805223fb11d48f3e94f7.html?origin=https%3A%2F%2Fwww.nnn.ed.nico"
+        title="Twitter settings iframe" style="display: none;"></iframe>
+    <script type="text/javascript" id="" src="https://www.googletagmanager.com/gtag/js?id=AW-661450372"></script>
+    <script type="text/javascript" id="" src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+    <script type="text/javascript"
+        id="">!function (d, e, f, a, b, c) { d.twq || (a = d.twq = function () { a.exe ? a.exe.apply(a, arguments) : a.queue.push(arguments) }, a.version = "1.1", a.queue = [], b = e.createElement(f), b.async = !0, b.src = "//static.ads-twitter.com/uwt.js", c = e.getElementsByTagName(f)[0], c.parentNode.insertBefore(b, c)) }(window, document, "script"); twq("init", "o2upm"); twq("track", "PageView");</script>
+    <script type="text/javascript"
+        id="">(function (a, e, b, f, g, c, d) { a[b] = a[b] || function () { (a[b].q = a[b].q || []).push(arguments) }; c = e.createElement(f); c.async = 1; c.src = "https://www.clarity.ms/tag/" + g + "?ref\x3dgtm2"; d = e.getElementsByTagName(f)[0]; d.parentNode.insertBefore(c, d) })(window, document, "clarity", "script", "c6hsgmh2kh");</script>
+    <img src="https://t.co/i/adsct?bci=3&amp;eci=2&amp;event_id=24a42efe-2be8-4e2e-a9c3-993ae7d84f52&amp;events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&amp;integration=advertiser&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=9bf801d0-3430-46be-b26c-4956982f0125&amp;tw_document_href=https%3A%2F%2Fwww.nnn.ed.nico%2Fcontents%2Fguides%2F1454%2Fcontent&amp;tw_iframe_status=0&amp;tw_order_quantity=0&amp;tw_sale_amount=0&amp;txn_id=o2upm&amp;type=javascript&amp;version=2.3.29"
+        height="1" width="1" style="display: none;"><img
+        src="https://analytics.twitter.com/i/adsct?bci=3&amp;eci=2&amp;event_id=24a42efe-2be8-4e2e-a9c3-993ae7d84f52&amp;events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&amp;integration=advertiser&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=9bf801d0-3430-46be-b26c-4956982f0125&amp;tw_document_href=https%3A%2F%2Fwww.nnn.ed.nico%2Fcontents%2Fguides%2F1454%2Fcontent&amp;tw_iframe_status=0&amp;tw_order_quantity=0&amp;tw_sale_amount=0&amp;txn_id=o2upm&amp;type=javascript&amp;version=2.3.29"
+        height="1" width="1" style="display: none;">
+    <script type="text/javascript"
+        id="">window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } gtag("js", new Date); gtag("config", "AW-661450372");</script>
+    <script type="text/javascript"
+        id="">window.yjDataLayer = window.yjDataLayer || []; function ytag() { yjDataLayer.push(arguments) } ytag({ type: "ycl_cookie" }); ytag({ type: "ycl_cookie_extended" });</script>
+    <script type="text/javascript" id="" src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+    <script type="text/javascript"
+        id="">window.yjDataLayer = window.yjDataLayer || []; function ytag() { yjDataLayer.push(arguments) } ytag({ type: "yss_retargeting", config: { yahoo_ss_retargeting_id: "1001119071", yahoo_sstag_custom_params: {} } });</script>
+    <iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"
+        style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;"
+        title="Twitter analytics iframe"></iframe>
+</body>
+
+</html>
