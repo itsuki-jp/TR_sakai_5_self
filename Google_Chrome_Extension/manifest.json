@@ -19,8 +19,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://*.nnn.ed.nico/courses/*",
-                "*://*/*"
+                "https://*.nnn.ed.nico/courses/*"
             ],
             "js": [
                 "content.js"
