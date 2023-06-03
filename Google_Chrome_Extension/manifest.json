@@ -13,18 +13,17 @@
         "default_popup": "popup.html"
     },
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "storage"
     ],
     "content_scripts": [
         {
             "matches": [
+                "https://*.nnn.ed.nico/courses/*",
                 "*://*/*"
             ],
             "js": [
                 "content.js"
-            ],
-            "css": [
-                "style.css"
             ]
         }
     ]
