@@ -79,6 +79,11 @@ a {
     text-align: center;
 }
 
+.box{
+    display: flex;
+}
+
+
 .organization {
     width: 1000px;
     color: #FFFFFF;
