@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #66B9BF;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    display: flex;
+}
+
+.header_flex {
+    display: flex;
+    height: 60px;
+    align-items: center;
+
+    /* ページ上部に固定 */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+}
+
+.header_flex nav {
+    margin-left: auto;
+}
+
+.header_flex ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.header_flex li {
+    color: #07889B;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.header_flex ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header_flex nav {
+    margin-left: auto;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#title {
+    color: #07889B;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 116px;
+    padding-top: 70px;
+
+    text-align: center;
+}
+
+.subtitle {
+    color: #07889B;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+}
+
+.organization {
+    width: 1000px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.organization .period {
+    font-size: 32px;
+    line-height: 39px;
+    align-items: center;
+}
+
+.organization .name {
+    font-size: 48px;
+    line-height: 58px;
+    align-items: center;
+
+}
+
+.organization .description {
+    font-size: 32px;
+    line-height: 39px;
+    align-items: center;
+}
