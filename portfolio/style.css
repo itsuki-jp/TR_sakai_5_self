@@ -42,6 +42,7 @@ nav {
 }
 
 #profile {
+    width: 100%;
     padding-top: 10vh;
     margin-top: -10vh;
 }
@@ -74,6 +75,9 @@ nav {
     font-size: 32px;
     line-height: 39px;
     align-items: center;
+}
+#languages{
+    padding-bottom: 100px;
 }
 
 #certificates {
