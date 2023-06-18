@@ -107,3 +107,10 @@ nav {
     padding-top: 10vh;
     margin-top: -10vh;
 }
+
+.carousel-inner {
+    max-height: 400px;
+}
+.carousel-inner img {
+    margin: auto;
+}
