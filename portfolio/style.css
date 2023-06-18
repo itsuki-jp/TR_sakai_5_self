@@ -11,13 +11,16 @@ body {
 
 nav {
     background-color: #66B9BF;
+    height: 10vh;
 }
 
 #home {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    padding-top: 20vh;
+    margin-top: -10vh;
+    height: 100vh;
 }
 
 #title {
@@ -33,10 +36,14 @@ nav {
 .subtitle {
     color: #07889B;
     font-weight: 700;
-    font-size: 64px;
     line-height: 77px;
     text-align: center;
     margin-bottom: 50px;
+}
+
+#profile {
+    padding-top: 10vh;
+    margin-top: -10vh;
 }
 
 .box {
@@ -69,15 +76,34 @@ nav {
     align-items: center;
 }
 
-#certificates p {
-    margin-left: 350px;
-    color: white;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
+#certificates {
+    padding-top: 10vh;
+    margin-top: -10vh;
 }
 
+#certificate_content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(20%, 1fr) auto minmax(20%, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+
+#certificate_content p {
+    color: white;
+    font-weight: 700;
+    line-height: 58px;
+    grid-column: 2;
+}
+
+
 #languages {
+    padding-top: 10vh;
+    margin-top: -10vh;
     width: 90%;
     margin: auto;
+}
+
+#works {
+    padding-top: 10vh;
+    margin-top: -10vh;
 }
