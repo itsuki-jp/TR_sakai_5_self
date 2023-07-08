@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>ChatGPT chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+</html>
+<script>
+    const key = "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";
+    async function sendPrompt(prompt = '') {
+        console.log("start");
+        const url = 'https://api.openai.com/v1/chat/completions';
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${key}`,
+            },
+            body: JSON.stringify({
+                'model': 'gpt-3.5-turbo',
+                'messages': [{ 'role': 'system', 'content': "送られる文章を古語に直してください" }, { 'role': 'user', 'content': prompt }],
+            }),
+        });
+
+        if (!response.ok) {
+            console.error('Error:', await response.text());
+            return;
+        }
+
+        const data = await response.json()
+        console.log(data.choices[0].message.content)
+    }
+    sendPrompt("お腹へった．夜ご飯作りたくない")
+</script>
