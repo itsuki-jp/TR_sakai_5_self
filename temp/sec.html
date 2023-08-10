@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nakaozi</title>
+  <link rel="stylesheet" href="./web.css">
+  <link rel="stylesheet" href="./sec.css">
+</head>
+
+<body>
+  <div class="menuBar">
+    <ul>
+
+      <li id="menu1">
+        <a href="#">Home</a>
+      </li>
+
+      <li id="menu2">
+        <a href="#">Muscle</a>
+      </li>
+
+      <li id="menu3">
+        <a href="#">Favourite</a>
+        <div class="subMenu-1">
+          <ul>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">picture</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li id="menu4">
+        <a href="#">Movie</a>
+        <div class="subMenu-1">
+          <ul>
+            <li><a href="#">Actor</a></li>
+            <li><a href="#">Movie</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li id="menu5"><a href="#">Food</a></li>
+    </ul>
+  </div>
+  <div class="flex">
+    <figure class="image" style="z-index:-1"><img src="https://picsum.photos/id/237/960/540" alt=""></figure>
+    <p class="text">ここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入りますここにテキストが入ります</p>
+  </div>
+  <script>
+    const menus = [];
+    for (let i = 1; i <= 6; i++) {
+      let menu = document.getElementById(`menu${i}`)
+      menus.push(menu);
+    }
+
+    document.addEventListener("click", (e) => {
+      console.log(e.target.id);
+      menus.map((menu) => {
+        if (e.target.id === menu.id) {
+          menu.classList.add("active");
+        } else {
+          menu.classList.remove("active");
+        }
+      })
+    });
+  </script>
+</body>
+
+</html>

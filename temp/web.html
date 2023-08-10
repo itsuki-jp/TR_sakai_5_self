@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nakaozi</title>
+  <link rel="stylesheet" href="web.css">
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet" />
+</head>
+
+<body>
+   <div class="menuBar">
+    <ul>
+       </li>
+       
+       <li id="menu1">
+        <a href="#" id="menu1">Home</a></li>
+       
+        <li id="menu2">
+        <a href="#" id="menu3">Muscle</a></li>
+      
+        <li id="menu3">
+          <a href="#" id="menu3">Favourite</a>
+        <div class="subMenu-1">
+          <ul>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">picture</a></li>
+          </ul>
+         </div>
+      </li>
+
+       <li id="menu4">
+        <a href="#" id="menu4">Movie</a>
+        <div class="subMenu-1">
+          <ul>
+            <li><a href="#">Actor</a></li>
+            <li><a href="#">Movie</a></li>
+          </ul>
+         </div>
+      </li>
+
+       <li id="menu5" id="menu5"><a href="#">Food</a></li>
+     </ul>
+   </div>
+  <script>
+    const menus = [];
+    for(let i = 1; i <=6; i++){
+      let menu = document.getElementById(`menu${i}`)
+      menus.push(menu);
+    }
+    
+    document.addEventListener("click", (e) => {
+      console.log(e.target.id);
+      menus.map((menu) => {
+          if(e.target.id === menu.id){
+             menu.classList.add("active");
+          } else {
+            menu.classList.remove("active");
+        }
+    })
+    });
+  
+  </script>
+
+<div>
+<div class="header_img"></div>  
+<div class="muscle">
+  <img src="./捨てマッチョ最終形態.jpg" width="700px" alt="">
+</div>
+</div>
+
+<p>
+<h1>
+  <div class="box"></div><p class="family1"><span class="example1">My news</span>
+  </div> 
+  </p>
+</h1>
+</p>
+
+<p>
+<h2>
+<div class="box"></div><p class="wf-sawarabigothic"><span class="example2">・ぬぬぬぬぬぬぬぬぬぬ邪知暴虐</span>
+</div>
+</p>
+</h2>
+</p>
+</body>
+</html>

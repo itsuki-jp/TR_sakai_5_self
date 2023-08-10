@@ -1,0 +1,108 @@
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image:url("");
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(252, 192, 204);
+}
+
+.menuBar {
+  background-color: rgb(243, 158, 178);
+  text-align: center;
+}
+
+.menuBar ul li {
+  display: inline-block;
+  width: 155px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  cursor: pointer;
+  transitition: all 0.2s;
+}
+
+.muscle{
+  padding-left: 22%;
+}
+ 
+.muscle{
+  padding-top: 10%;
+}
+
+.muscle{
+  padding-bottom: 20%;
+}
+
+
+
+
+span.example1 {
+  color: rgb(224, 39, 98);
+}
+
+ .box {
+  background-color: #cccccc;
+}
+
+p {
+  text-align: center;
+}
+
+.family1{
+  font-family: 'Times New Roman';
+} 
+
+span.example2 {
+  color: rgb(224, 39, 98);
+}
+
+ .box {
+  background-color: #b06969;
+}
+
+p {
+  text-align: center;
+}
+
+
+.wf-sawarabigothic { font-family: "Sawarabi Mincho"; }
+
+
+.menuBar ul li a {
+  text-decoration: none;
+  color:white;
+  font-weight: 600;
+}
+
+.active,
+.menuBar ul li:hover {
+ background-color: rgb(245, 170, 187);
+}
+
+.subMenu-1 {
+  position: absolute;
+  background-color:rgb(243, 158, 178);
+  margin-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: none;
+}
+
+.menuBar ul li:hover .subMenu-1{
+  display: block;
+}
+
+.subMenu-1 ul li {
+  display: block;
+  width: 155px;
+  border-bottom: 1px dotted white;
+}
+
+.menuBar ul li:hover .subMenu-1 ul li:last-child {
+  border: none;
+}
+
+.menuBar ul {
+  padding-inline-start: 0px
+}

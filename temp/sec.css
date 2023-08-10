@@ -1,0 +1,26 @@
+/* 横並び */
+
+.flex {
+  display: flex;
+  /*横並び*/
+}
+
+.flex .image {
+  width: 1000px;
+  height: auto;
+  /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.flex .text {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+figure>img {
+  width: 100%;
+  min-height: 100%;
+}
